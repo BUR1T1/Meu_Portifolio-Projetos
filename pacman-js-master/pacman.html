@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #game-container {
+            position: relative;
+        }
+
+        .btn-voltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color:  #2ecc7061;
+            color: #000000;
+            text-decoration: none;
+            border: none;
+            border-radius: 20px;
+          }
+          
+          .btn-voltar:hover {
+            background-color:  #2ecc71;
+          }
+
+     
+        .caixote {
+            position: fixed;
+            top: 50%; 
+            right: 20px; 
+            transform: translateY(-50%); 
+            background-color: #2ecc71; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+            width: 250px; 
+        }
+
+        .caixote h2 {
+            margin-bottom: 10px; 
+            color: #000000; 
+        }
+
+        .caixote p {
+            font-size: 14px; 
+            line-height: 1.5; 
+            color: #000000; 
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/portifolio.html" class="btn-voltar">&larr; Voltar</a>
+    <div id="game-container">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div style="display:none;">
+            <img id="animation" src="animations.gif" width="140" height="20">
+            <img id="ghosts" src="ghost.png" width="140" height="20">
+        </div>
+    </div>
+
+    
+    <div class="caixote">
+        <h2>apresentação</h2>
+        <p>Este é um jogo de Pacman simples criado usando HTML5 Css Canvas e JavaScript.</p>
+        <p>Este jogo Pacman simplificado não foi finalizado, então pode conter alguns erros.</p>
+        <p>Divirta-se jogando!</p>
+    </div>
+
+    <script src="ghost.js"></script>
+    <script src="pacman.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Chat | Manual do Dev</title>
+</head>
+<body>
+
+    <a href="/portifolio.html" class="btn-voltar">&larr; Voltar</a>
+
+    <section class="tutorial">
+        <h2>Apresenração</h2>
+        <p>
+            Olá, para você que está aqui, quero lhe apresentar um dos meus projetos que me ajudaram a me desenvolver 
+            como programador. Este é um chat simples onde você pode conversar em tempo real. 
+            Claro, para isso, você precisa enviar o link acima para que a pessoa do outro lado
+            possa se comunicar com você. Peço perdão pela falta de praticidade, 
+            mas quero lembrar que estou aprendendo e espero desenvolver ainda mais não só minhas habilidades,
+            mas também este projeto em particular. Espero que tenha uma boa experiência e, se quiser,
+            ao voltar na página anterior, encontrará meus contatos e minhas redes sociais.
+            Fique à vontade para comentar, seja uma crítica ou elogio.
+        </p>
+    </section>
+    
+    <section class="container">
+
+        <section class="login">
+            <h2>Login</h2>
+            <form class="login__form">
+                <input type="text" class="login__input" placeholder="Seu nome" required />
+                <button type="submit" class="login__button">Entrar</button>
+            </form>
+        </section>
+
+        <section class="chat">
+            <section class="chat__messages">
+            </section>
+
+            <form class="chat__form">
+                <input type="text" class="chat__input" placeholder="Digite uma mensagem" required />
+                <button type="submit" class="chat__button">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </form>
+        </section>
+
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
