@@ -104,3 +104,15 @@ const sendMessage = (event) => {
 
 loginForm.addEventListener("submit", handleLogin)
 chatForm.addEventListener("submit", sendMessage)
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('.login__form');
+    const tutorialSection = document.getElementById('tutorial');
+
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();  // Impede o envio real do formulário
+        tutorialSection.style.display = 'none';  // Oculta a seção de tutorial
+        // Adicione aqui qualquer outra lógica necessária, como validação do login
+    });
+});
